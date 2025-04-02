@@ -4,27 +4,23 @@ import java.util.Scanner;
 public class App {
         //Comentário
 
-    public static void funcao_teste (){
-        //Biblioteca para entrada de dados
-        Scanner ler = new Scanner(System.in); 
+    public static void main(String[] args)throws Exception{
+        //Entrada dos dados
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a massa kg: ");
+        double massa = scanner.nextDouble();
 
-        //variável local a
-        String v2;
-        int v1;
+        System.out.print("Digite a altura m: ");
+        double altura = scanner.nextDouble();
 
-        System.out.println("Comando de Saida de Dados");
-        
-        System.out.printf("Informe uma palavra: ");
-        v2 = ler.next();
+        scanner.close();//Fechamento do scanner após entrada
+        //Criação do objeto e calculo de imc
+        CorpoHumano corpo = new CorpoHumano();
+        corpo.setmassa(massa);
+        corpo.setaltura(altura);
 
-        System.out.printf("Informe um número: ");
-        v1 = ler.nextInt();
-
-        System.out.printf(v2+" "+v1);
-    }
-    public static void main(String[] args) throws Exception {
-        funcao_teste();
-
-
+        double imc = corpo.Calcimc();
+        //Saída de resultado 
+        System.out.print("Seu imc é " +imc);
     }
 }
