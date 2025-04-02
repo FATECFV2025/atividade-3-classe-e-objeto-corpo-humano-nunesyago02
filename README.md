@@ -33,8 +33,11 @@
 ### Após essa implementação responda:
 
 - Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+Deu um erro, pois está indefinido
 - Na classe Corpo_Humano altere a linha private float Massa para public float Massa; Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+erro, que a gente deve padrozinar a forma que digitamos
 - Na classe Corpo_Humano altere a linha public setVolume (float volume) para private setVolume (float volume).Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+erro, Que não se deve deixar publico esses dados
 
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
